@@ -7,6 +7,7 @@ um das Projekt zu installieren müssen folgende Dependencies installiert werden:
 Pip3: sudo apt install python3-pip
 
 Flask: `pip install flask`
+
 picamera: `pip install picamera`
 
 ### Files
