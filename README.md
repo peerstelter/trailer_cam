@@ -55,3 +55,7 @@ Jetzt wird der Python-Code aus der `app.py`-Datei als Daemon gestartet und autom
 Sie können den Status des Dienstes überprüfen mit `sudo systemctl status app.service`, und Sie können den Dienst mit `sudo systemctl stop app.service` stoppen.
 
 Bitte stellen Sie sicher, dass Sie die Pfade und Konfigurationen entsprechend Ihrer spezifischen Umgebung anpassen.
+
+***
+
+Have fun with it all!
