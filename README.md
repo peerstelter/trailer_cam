@@ -9,6 +9,11 @@ Pip3: sudo apt install python3-pip
 Flask: pip install flask
 picamera: pip install picamera
 
+### Files
+1. Klonen Sie das Repository:
+git clone 
+
+
 ### Install as Deamon
 Um den Befehl `python app.py` als Daemon auf dem Raspberry Pi hinzuzufügen, können Sie eine Systemd-Serviceeinheit erstellen. Hier ist eine Schritt-für-Schritt-Anleitung:
 
