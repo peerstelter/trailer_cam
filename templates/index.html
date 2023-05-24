@@ -79,9 +79,6 @@
     <div class="container">
         <h1>Live Video Stream - Trailer Cam</h1>
         <div class="video-wrapper" onclick="toggleFullscreen()">
-            <img class="video" src="{{ url_for('video_feed') }}" alt="Live Video Stream">
+            <video class="video" src="{{ url_for('video_feed') }}" alt="Live Video Stream" controls allowfullscreen></video>
         </div>
-        <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
-    </div>
-</body>
-</html>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</
