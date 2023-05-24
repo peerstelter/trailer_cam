@@ -6,8 +6,8 @@ um das Projekt zu installieren müssen folgende Dependencies installiert werden:
 
 Pip3: sudo apt install python3-pip
 
-Flask: ```plaintext pip install flask '''
-picamera: ```plaintext pip install picamera '''
+Flask: ```plaintext pip install flask ```
+picamera: ```plaintext pip install picamera ```
 
 ### Files
 1. Klonen Sie das Repository:
