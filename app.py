@@ -13,7 +13,7 @@ def generate_video():
     with picamera.PiCamera() as camera:
         # Kamerakonfiguration
         camera.resolution = (960,540)
-        camera.rotation = 180
+        camera.rotation = 0
 
         # Videoaufnahme und Streaming
         stream = io.BytesIO()
