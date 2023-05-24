@@ -12,7 +12,7 @@ picamera: `pip install picamera`
 
 ### Files
 1. Klonen Sie das Repository:
-git clone https://github.com/peerstelter/trailer_cam.git
+`git clone https://github.com/peerstelter/trailer_cam.git`
 
 
 
