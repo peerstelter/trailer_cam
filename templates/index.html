@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Video - PeerAudio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top right, #a0ecc4, #0d47a1);
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            color: #333333; /* Dunkles Grau für die Schriftfarbe */
+        }
+
+        h1 {
+            color: #333333; /* Dunkles Grau für die Überschrift */
+            margin-bottom: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            max-width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fullscreen-btn {
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function toggleFullscreen() {
+            const videoWrapper = document.querySelector('.video-wrapper');
+
+            if (videoWrapper.requestFullscreen) {
+                videoWrapper.requestFullscreen();
+            } else if (videoWrapper.mozRequestFullScreen) {
+                videoWrapper.mozRequestFullScreen();
+            } else if (videoWrapper.webkitRequestFullscreen) {
+                videoWrapper.webkitRequestFullscreen();
+            } else if (videoWrapper.msRequestFullscreen) {
+                videoWrapper.msRequestFullscreen();
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Live Video Stream - PeerAudio</h1>
+        <div class="video-wrapper" onclick="toggleFullscreen()">
+            <img class="video" src="{{ url_for('video_feed') }}" alt="Live Video Stream">
+        </div>
+        <button class="fullscreen-btn" onclick="toggleFullscreen()">Fullscreen</button>
+    </div>
+</body>
+</html>
