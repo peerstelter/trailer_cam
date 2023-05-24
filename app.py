@@ -12,7 +12,7 @@ def index():
 def generate_video():
     with picamera.PiCamera() as camera:
         # Kamerakonfiguration
-        camera.resolution = (1920,1080)
+        camera.resolution = (960,540)
         camera.rotation = 0
         camera.framerate = 10
 
