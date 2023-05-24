@@ -24,7 +24,7 @@ Um den Befehl `python app.py` als Daemon auf dem Raspberry Pi hinzuzufügen, kö
 2. Geben Sie den folgenden Inhalt in die Serviceeinheitsdatei ein:
 ```plaintext
 [Unit]
-Description=PeerAudio App
+Description=Trailer Cam App
 After=network.target
 
 [Service]
@@ -32,9 +32,9 @@ ExecStart=/usr/bin/python /Pfad/zur/app.py
 WorkingDirectory=/Pfad/zum/Verzeichnis
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=peeraudio
-User=pi
-Group=pi
+SyslogIdentifier=trailercam
+User=root
+Group=root
 Restart=always
 
 [Install]
