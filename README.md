@@ -4,7 +4,7 @@ Das Live Video Streaming-Projekt ermöglicht die Übertragung eines Videos von e
 ### Installation dependencies
 um das Projekt zu installieren müssen folgende Dependencies installiert werden:
 
-Pip3: sudo apt install python3-pip
+Pip3: `sudo apt install python3-pip`
 
 Flask: `pip install flask`
 
