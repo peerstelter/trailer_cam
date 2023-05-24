@@ -11,7 +11,8 @@ picamera: pip install picamera
 
 ### Files
 1. Klonen Sie das Repository:
-git clone 
+git clone https://github.com/peerstelter/trailer_cam.git
+
 
 
 ### Install as Deamon
