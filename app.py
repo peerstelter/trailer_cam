@@ -14,7 +14,7 @@ def generate_video():
         # Kamerakonfiguration
         camera.resolution = (960,540)
         camera.rotation = 0
-        camera.framerate = 10
+        camera.framerate = 5
 
         # Videoaufnahme und Streaming
         stream = io.BytesIO()
